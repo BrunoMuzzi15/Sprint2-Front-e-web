@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.header {
+    font-size: 20px; 
+    text-align: center;
+    background-color: #1d2ccf;
+    color: white;
+    height: 40px;
+    padding: 15px;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cards{
+    background-color: #1d2ccf;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 30px 150px 100px;
+}
+.celular{
+   text-align: center; 
+}
+.celular-texto {
+    background: linear-gradient(#1d2ccf, #ffffff);
+    height: 100px;
+    font-size: 20px;
+}
+.celular-imagem{
+    margin: 15px;
+}
+.btn {
+    background: linear-gradient( 45deg, #7d7d1c, #ebf21a);
+    padding:10px;
+    border-radius: 10px;
+}
+.footer {
+    text-align: center;
+    padding: 90px;
+    color: #8f8f8f;
+}
