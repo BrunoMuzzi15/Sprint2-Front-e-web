@@ -74,11 +74,31 @@ body{
     background: linear-gradient( 45deg, #7d7d1c, #ebf21a);
     padding:10px;
     border-radius: 10px;
+    display: inline-block;
+    transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
 }
+
+.btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08) saturate(1.1);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.btn:active {
+    transform: translateY(0px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+}
+
 .footer {
     text-align: center;
     padding: 90px;
     color: #8f8f8f;
+    margin-top: 90px;
+}
+
+.rodape {
+    padding: 70px;
+    margin-top: 70px;
 }
 
 .footer a {
