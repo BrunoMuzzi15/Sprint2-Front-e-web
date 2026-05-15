@@ -95,13 +95,12 @@ body{
 
 
 .cards2 h3 {
-    margin: 7px 0; /* Aumenta o espaço em cima e embaixo do título */
+    margin: 7px 0;
 }
 
 .cards2 p {
-    margin-bottom: 2px; /* Dá um espaço entre a frase e o dado de contato (número/email) */
-    line-height: 1.5;    /* Isso faz com que, se o texto quebrar linha, ele não fique grudado */
-}
+    margin-bottom: 2px; 
+    line-height: 1.5;   
 
 
 .cards2 strong, .card .contato { 
@@ -111,12 +110,12 @@ body{
 
 
 .botao-contato {
-    margin-bottom: 30px; /* Ajuste o valor conforme necessário */
-    display: inline-block; /* Garante que a margem funcione corretamente */
+    margin-bottom: 30px; 
+    display: inline-block; 
 }
 
 .centro {
     margin-bottom: 40px;
-    text-align: center; /* Para garantir que continue no meio */
+    text-align: center; 
 }
 }
