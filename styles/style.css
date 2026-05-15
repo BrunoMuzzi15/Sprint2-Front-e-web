@@ -33,6 +33,7 @@ body{
     border-radius: 10px;
     padding: 10px;
     animation: cardPulse 1.0s ease-out both;
+    text-align: center;
 }
 .cards{
     background-color: #1d2ccf;
@@ -42,6 +43,18 @@ body{
     gap: 20px;
     padding: 30px 150px 100px;
 }
+.cards2{
+    background-color: #1d2ccf;
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    gap: 20px;
+    padding: 30px 150px 100px;
+    text-align: center;
+    
+}
+    
+
 #cabecario {
     animation: cardPulse 2.8s ease-out both;
 }
@@ -68,7 +81,42 @@ body{
     color: #8f8f8f;
 }
 
+.footer a {
+    color: blue;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
 .foto{
     width: 80px;
     border-radius: 15px;
+}
+
+
+.cards2 h3 {
+    margin: 7px 0; /* Aumenta o espaço em cima e embaixo do título */
+}
+
+.cards2 p {
+    margin-bottom: 2px; /* Dá um espaço entre a frase e o dado de contato (número/email) */
+    line-height: 1.5;    /* Isso faz com que, se o texto quebrar linha, ele não fique grudado */
+}
+
+
+.cards2 strong, .card .contato { 
+    display: block;    
+    margin-top: 10px;  
+}
+
+
+.botao-contato {
+    margin-bottom: 30px; /* Ajuste o valor conforme necessário */
+    display: inline-block; /* Garante que a margem funcione corretamente */
+}
+
+.centro {
+    margin-bottom: 40px;
+    text-align: center; /* Para garantir que continue no meio */
+}
 }
