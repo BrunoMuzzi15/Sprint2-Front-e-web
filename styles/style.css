@@ -39,7 +39,7 @@ body{
     display: flex;
     justify-content: space-between;
     height: 70px;
-    gap: 50px;
+    gap: 20px;
     padding: 30px 150px 100px;
 }
 #cabecario {
@@ -47,7 +47,7 @@ body{
 }
 
 .celular{
-   text-align: center; 
+    text-align: center; 
 }
 .celular-texto {
     background: linear-gradient(#1d2ccf,rgb(81, 122, 197));
@@ -55,7 +55,7 @@ body{
     font-size: 20px;
 }
 .celular-imagem{
-    margin: 15px;
+    margin: 30px;
 }
 .btn {
     background: linear-gradient( 45deg, #7d7d1c, #ebf21a);
@@ -66,4 +66,9 @@ body{
     text-align: center;
     padding: 90px;
     color: #8f8f8f;
+}
+
+.foto{
+    width: 80px;
+    border-radius: 15px;
 }
