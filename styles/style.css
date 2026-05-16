@@ -58,6 +58,11 @@ body{
 #cabecario {
     animation: cardPulse 2.8s ease-out both;
 }
+#cabecario2 {
+    color: white; /* Isso vai deixar o "Horizon" e a frase brancos */
+    animation: cardPulse 2.8s ease-out both;
+    text-align: center;
+}
 
 .celular{
     text-align: center; 
@@ -74,11 +79,31 @@ body{
     background: linear-gradient( 45deg, #7d7d1c, #ebf21a);
     padding:10px;
     border-radius: 10px;
+    display: inline-block;
+    transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
 }
+
+.btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08) saturate(1.1);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.btn:active {
+    transform: translateY(0px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+}
+
 .footer {
     text-align: center;
     padding: 90px;
     color: #8f8f8f;
+    margin-top: 90px;
+}
+
+.rodape {
+    padding: 70px;
+    margin-top: 70px;
 }
 
 .footer a {
@@ -118,4 +143,96 @@ body{
     margin-bottom: 40px;
     text-align: center; 
 }
+}
+
+.centro {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra suave */
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca o label em cima do input */
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Estilo para as caixas de texto */
+input[type="email"], textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Quando clicar na caixa, ela muda de cor */
+input:focus, textarea:focus {
+    border-color: #1d2ccf; /* O azul que você está usando */
+}
+
+textarea {
+    height: 100px;
+    resize: none; /* Impede o usuário de deformar o layout */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #1d2ccf;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1521a0;
+    transform: scale(1.02);
+}
+
+.centro {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    max-width: 450px;
+    margin: 0 auto 50px; /* Centraliza horizontalmente */
+    font-family: sans-serif;
+}
+.campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Alinha o texto do form à esquerda dentro do quadrado */
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.body2{
+    font-family: Arial, sans-serif;
+    background-color: #1d2ccf;
+}
+
+.celular-texto2 {
+    background: #1d2ccf;
+    height: 100px;
+    font-size: 20px;
 }
