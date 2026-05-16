@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luz Dinâmica</title>
+  <script src="../js/script.js"></script>
 </head>
 
 <body style="
@@ -83,17 +84,31 @@
                 mais escura, com baixa nitidez e perda de detalhes
                 importantes em ambientes difíceis.
             </p>
-
+            <button onclick="ativarModo()" style="
+            background: linear-gradient(to right, #1f24d1, #4d74d8);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+">
+            Ativar Modo
+            </button>
         </div>
 
     
-        <div style="
+        <div id="modo" style="
             background: white;
             width: 380px;
             padding: 30px;
             border-radius: 20px;
             text-align: center;
             box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+            display: none;
         ">
 
             <h2 style="
