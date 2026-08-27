@@ -20,6 +20,18 @@ function Header() {
 
 }
 
+    console.log("================================");
+console.log("JOVI LUZ DINÂMICA");
+console.log("Aplicação React iniciada!");
+console.log("Componentes carregados!");
+console.log("localStorage:", typeof localStorage !== "undefined");
+console.log("Math.random:", Math.random());
+console.log("Math.round:", Math.round(5.7));
+console.log("================================");
+
+function App() 
+    // seu código atual
+
 
 function Beneficios({ beneficios }) {
 
@@ -836,3 +848,4 @@ export default function App() {
     );
 
 }
+
