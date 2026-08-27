@@ -1,238 +1,665 @@
 @keyframes cardPulse {
-  0%   { transform: translateY(10px) scale(0.98); opacity: 0; }
-  60%  { transform: translateY(-2px) scale(1.01); opacity: 1; }
-  100% { transform: translateY(0) scale(1); opacity: 1; }
+
+    0% {
+        transform: translateY(10px) scale(0.98);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(-2px) scale(1.01);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
 }
 
-*{
+
+* {
+
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
-body{
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
     font-family: Arial, sans-serif;
+
+    color: #111;
+
+    background-color: white;
+
 }
+
+
 .header {
-    font-size: 20px; 
+
+    font-size: 20px;
+
     text-align: center;
+
     background-color: #1d2ccf;
+
     color: white;
-    height: 40px;
+
+    min-height: 70px;
+
     padding: 15px;
+
 }
+
+
 .titulo {
+
     border-radius: 70px;
+
     font-size: 40px;
-    animation: cardPulse 1.0s ease-out both;
+
+    animation: cardPulse 1s ease-out both;
+
 }
+
+
 .fonte {
-    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+    font-family:
+        "Poppins",
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
 }
+
+
+/* CARDS */
+
+.cards {
+
+    background-color: #1d2ccf;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    min-height: 170px;
+
+    gap: 20px;
+
+    padding: 30px 150px 60px;
+
+}
+
 
 .card {
+
     background-color: white;
+
     border-radius: 10px;
-    padding: 10px;
-    animation: cardPulse 1.0s ease-out both;
+
+    padding: 20px;
+
+    animation:
+        cardPulse 1s ease-out both;
+
     text-align: center;
+
+    flex: 1;
+
 }
-.cards{
-    background-color: #1d2ccf;
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-    gap: 20px;
-    padding: 30px 150px 100px;
+
+
+.card h3 {
+
+    margin-bottom: 10px;
+
 }
-.cards2{
-    background-color: #1d2ccf;
-    display: flex;
-    justify-content: center;
-    height: 130px;
-    gap: 20px;
-    padding: 30px 150px 100px;
+
+
+/* CELULAR */
+
+.celular {
+
     text-align: center;
-    
+
 }
-    
+
+
+.celular-texto {
+
+    background:
+        linear-gradient(
+            #1d2ccf,
+            rgb(81, 122, 197)
+        );
+
+    min-height: 120px;
+
+    padding: 20px;
+
+    font-size: 20px;
+
+    color: white;
+
+}
+
 
 #cabecario {
-    animation: cardPulse 2.8s ease-out both;
-}
-#cabecario2 {
-    color: white; /* Isso vai deixar o "Horizon" e a frase brancos */
-    animation: cardPulse 2.8s ease-out both;
-    text-align: center;
+
+    animation:
+        cardPulse 2.8s ease-out both;
+
 }
 
-.celular{
-    text-align: center; 
-}
-.celular-texto {
-    background: linear-gradient(#1d2ccf,rgb(81, 122, 197));
-    height: 100px;
-    font-size: 20px;
-}
-.celular-imagem{
+
+.celular-imagem {
+
     margin: 30px;
+
 }
+
+
+.celular-imagem img {
+
+    max-width: 100%;
+
+    width: 420px;
+
+    border-radius: 15px;
+
+}
+
+
+/* BOTÃO */
+
 .btn {
-    background: linear-gradient( 45deg, #7d7d1c, #ebf21a);
-    padding:10px;
+
+    background:
+        linear-gradient(
+            45deg,
+            #7d7d1c,
+            #ebf21a
+        );
+
+    color: #111;
+
+    border: none;
+
+    padding: 12px 22px;
+
     border-radius: 10px;
+
     display: inline-block;
-    transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition:
+        transform 180ms ease,
+        filter 180ms ease,
+        box-shadow 180ms ease;
+
 }
+
 
 .btn:hover {
+
     transform: translateY(-2px);
-    filter: brightness(1.08) saturate(1.1);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+
+    filter:
+        brightness(1.08)
+        saturate(1.1);
+
+    box-shadow:
+        0 8px 18px
+        rgba(0, 0, 0, 0.18);
+
 }
+
 
 .btn:active {
-    transform: translateY(0px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+
+    transform: translateY(0);
+
+    box-shadow:
+        0 4px 10px
+        rgba(0, 0, 0, 0.16);
+
 }
+
+
+/* LOGIN */
+
+.login-area {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: 60px;
+
+}
+
+
+.login-btn {
+
+    padding: 18px 35px;
+
+    background:
+        linear-gradient(
+            to right,
+            #1f24d1,
+            #4d74d8
+        );
+
+    color: white;
+
+    border: none;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, .25);
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.login-btn:hover {
+
+    transform: translateY(-2px);
+
+    filter:
+        brightness(1.08)
+        saturate(1.1);
+
+    box-shadow:
+        0 8px 18px
+        rgba(0, 0, 0, 0.18);
+
+}
+
+
+/* FOOTER */
 
 .footer {
+
     text-align: center;
-    padding: 90px;
+
+    padding: 90px 20px;
+
     color: #8f8f8f;
+
     margin-top: 90px;
+
 }
+
 
 .rodape {
-    padding: 70px;
-    margin-top: 70px;
-}
 
-.footer a {
-    color: blue;
-    text-decoration: none;
-    font-size: inherit;
-    font-family: inherit;
-}
+    padding: 70px 10px;
 
-.foto{
-    width: 80px;
-    border-radius: 15px;
-}
+    margin-top: 20px;
 
-
-.cards2 h3 {
-    margin: 7px 0;
-}
-
-.cards2 p {
-    margin-bottom: 2px; 
-    line-height: 1.5;   
-
-
-.cards2 strong, .card .contato { 
-    display: block;    
-    margin-top: 10px;  
 }
 
 
 .botao-contato {
-    margin-bottom: 30px; 
-    display: inline-block; 
+
+    margin-bottom: 30px;
+
 }
 
-.centro {
-    margin-bottom: 40px;
-    text-align: center; 
-}
+
+/* PÁGINAS EXTRAS */
+
+.pagina-extra {
+
+    min-height: 55vh;
+
+    padding: 60px 20px;
+
+    background-color: #1d2ccf;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
 }
 
+
 .centro {
+
     background-color: white;
-    padding: 30px;
+
+    padding: 40px;
+
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra suave */
-    max-width: 400px;
-    margin: 20px auto;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, .3);
+
+    width: min(450px, 100%);
+
+    margin:
+        0 auto 50px;
+
     font-family: sans-serif;
+
 }
+
+
+.centro h2 {
+
+    margin-bottom: 25px;
+
+    text-align: center;
+
+}
+
+
+/* CAMPOS */
 
 .campo {
+
     margin-bottom: 20px;
+
     display: flex;
-    flex-direction: column; /* Coloca o label em cima do input */
+
+    flex-direction: column;
+
+    text-align: left;
+
 }
+
 
 .campo label {
+
     font-weight: bold;
+
     margin-bottom: 8px;
+
     color: #333;
+
 }
 
-/* Estilo para as caixas de texto */
-input[type="email"], textarea {
+
+input[type="email"],
+input[type="password"],
+textarea {
+
     padding: 12px;
-    border: 2px solid #ddd;
+
+    border:
+        2px solid #ddd;
+
     border-radius: 8px;
+
     outline: none;
-    transition: 0.3s;
+
+    transition: .3s;
+
+    font: inherit;
+
 }
 
-/* Quando clicar na caixa, ela muda de cor */
-input:focus, textarea:focus {
-    border-color: #1d2ccf; /* O azul que você está usando */
+
+input:focus,
+textarea:focus {
+
+    border-color: #1d2ccf;
+
 }
+
 
 textarea {
+
     height: 100px;
-    resize: none; /* Impede o usuário de deformar o layout */
+
+    resize: none;
+
 }
 
-/* Estilo do botão */
-button {
+
+/* BOTÃO DOS FORMULÁRIOS */
+
+.centro form > button {
+
     background-color: #1d2ccf;
+
     color: white;
-    padding: 10px;
+
+    padding: 12px;
+
     border: none;
+
     border-radius: 8px;
+
     font-weight: bold;
+
     cursor: pointer;
+
     width: 100%;
-    transition: 0.3s;
+
 }
 
-button:hover {
+
+.centro form > button:hover {
+
     background-color: #1521a0;
+
     transform: scale(1.02);
+
 }
 
-.centro {
-    background-color: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    max-width: 450px;
-    margin: 0 auto 50px; /* Centraliza horizontalmente */
-    font-family: sans-serif;
-}
-.campo {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: left; /* Alinha o texto do form à esquerda dentro do quadrado */
+
+/* VOLTAR */
+
+.voltar {
+
+    margin-top: 15px;
+
+    background: transparent;
+
+    color: #1d2ccf;
+
+    border:
+        1px solid #1d2ccf;
+
+    padding: 10px;
+
+    width: 100%;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
 }
 
-.campo label {
+
+/* MENSAGEM */
+
+.mensagem {
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    color: #1d2ccf;
+
     font-weight: bold;
-    margin-bottom: 8px;
-    color: #333;
+
 }
 
-.body2{
-    font-family: Arial, sans-serif;
-    background-color: #1d2ccf;
+
+/* COMPARAÇÃO */
+
+.comparacao > p {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
 }
 
-.celular-texto2 {
+
+.opcoes {
+
+    display: grid;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.opcoes button {
+
+    padding: 12px;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: white;
+
+    cursor: pointer;
+
+}
+
+
+.opcoes .selecionado {
+
     background: #1d2ccf;
-    height: 100px;
-    font-size: 20px;
+
+    color: white;
+
+    border-color: #1d2ccf;
+
 }
+
+
+.resultado {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background: #eef0ff;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+}
+
+
+.resultado p {
+
+    margin: 8px 0;
+
+}
+
+
+.config-info {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: #555;
+
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .cards {
+
+        flex-direction: column;
+
+        padding:
+            30px
+            25px
+            50px;
+
+    }
+
+
+    .titulo {
+
+        font-size: 30px;
+
+    }
+
+
+    .celular-texto {
+
+        height: auto;
+
+        min-height: 120px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .titulo {
+
+        font-size: 25px;
+
+    }
+
+
+    .footer {
+
+        padding:
+            60px 15px;
+
+    }
+
+
+    .rodape {
+
+        padding:
+            40px 10px;
+
+    }
+
+}
+
