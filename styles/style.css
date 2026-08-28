@@ -131,7 +131,11 @@ body {
 }
 
 
+<<<<<<< HEAD
 /* APRESENTAÇÃO */
+=======
+
+>>>>>>> 2a201f64ac87c6c4ebdd1d7838992d386333d784
 
 /* APRESENTAÇÃO */
 
@@ -178,7 +182,7 @@ body {
     margin-top: 20px;
 }
 
-/* BOTÃO */
+
 
 .btn {
 
@@ -237,7 +241,7 @@ body {
 }
 
 
-/* LOGIN */
+
 
 .login-area {
 
@@ -299,7 +303,7 @@ body {
 }
 
 
-/* FOOTER */
+
 
 .footer {
 
@@ -330,7 +334,7 @@ body {
 }
 
 
-/* PÁGINAS EXTRAS */
+
 
 .pagina-extra {
 
@@ -380,7 +384,7 @@ body {
 }
 
 
-/* CAMPOS */
+
 
 .campo {
 
@@ -443,7 +447,7 @@ textarea {
 }
 
 
-/* BOTÃO DOS FORMULÁRIOS */
+
 
 .centro form > button {
 
@@ -475,7 +479,7 @@ textarea {
 }
 
 
-/* VOLTAR */
+
 
 .voltar {
 
@@ -499,7 +503,7 @@ textarea {
 }
 
 
-/* MENSAGEM */
+
 
 .mensagem {
 
@@ -514,7 +518,7 @@ textarea {
 }
 
 
-/* COMPARAÇÃO */
+
 
 .comparacao > p {
 
@@ -596,7 +600,6 @@ textarea {
 }
 
 
-/* RESPONSIVIDADE */
 
 @media (max-width: 800px) {
 
