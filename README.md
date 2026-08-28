@@ -60,4 +60,3 @@ Os integrantes da equipe estão identificados no arquivo INTEGRANTES.TXT, que ac
 O projeto JOVI Luz Dinâmica representa a evolução do protótipo desenvolvido nas sprints anteriores para uma aplicação desenvolvida utilizando React, atendendo aos requisitos de componentização, estrutura pai e filho, armazenamento de dados com localStorage, utilização de operações matemáticas com Math, versionamento no GitHub e documentação necessária para instalação, execução e teste da aplicação em outra máquina.
 
 
-s
