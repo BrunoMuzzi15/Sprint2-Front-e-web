@@ -131,59 +131,52 @@ body {
 }
 
 
-/* CELULAR */
+/* APRESENTAÇÃO */
 
-.celular {
+/* APRESENTAÇÃO */
 
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-
+    padding: 50px 20px;
+    width: 100%;
 }
 
-
-.celular-texto {
-
-    background:
-        linear-gradient(
-            #1d2ccf,
-            rgb(81, 122, 197)
-        );
-
-    min-height: 120px;
-
-    padding: 20px;
-
-    font-size: 20px;
-
-    color: white;
-
+.apresentacao-texto {
+    max-width: 700px;
+    margin: 0 auto 30px;
 }
 
-
-#cabecario {
-
-    animation:
-        cardPulse 2.8s ease-out both;
-
+.apresentacao-texto h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
 }
 
-
-.celular-imagem {
-
-    margin: 30px;
-
+.apresentacao-texto p {
+    font-size: 18px;
+    line-height: 1.5;
 }
 
+.apresentacao-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
 
-.celular-imagem img {
-
-    max-width: 100%;
-
+.apresentacao-imagem img {
     width: 420px;
-
+    max-width: 90%;
     border-radius: 15px;
-
 }
 
+.apresentacao .btn {
+    margin-top: 20px;
+}
 
 /* BOTÃO */
 
@@ -661,5 +654,67 @@ textarea {
 
     }
 
+}
+
+/* SIMULADOR */
+
+.simulador {
+    max-width: 700px;
+    margin: 70px auto;
+    padding: 40px 25px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #f4f5ff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.simulador h2 {
+    margin-bottom: 15px;
+    color: #1d2ccf;
+}
+
+.simulador p {
+    margin-bottom: 25px;
+}
+
+.simulador select {
+    padding: 12px;
+    width: min(400px, 100%);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.simulador-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.simulador-botoes button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1d2ccf;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.simulador-botoes button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.simulador .resultado {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: #1d2ccf;
+    font-weight: bold;
 }
 
