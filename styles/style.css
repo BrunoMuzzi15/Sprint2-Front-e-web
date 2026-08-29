@@ -87,7 +87,7 @@ body {
 }
 
 
-/* CARDS */
+
 
 .cards {
 
@@ -130,6 +130,12 @@ body {
 
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 5a36cb8b6462d1edd4c7e72991993b1483b0c935
 .apresentacao {
     display: flex;
     flex-direction: column;
