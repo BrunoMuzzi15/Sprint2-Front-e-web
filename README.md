@@ -52,7 +52,7 @@ O projeto possui uma página de Login para representar a funcionalidade de acess
 A Inteligência Artificial foi utilizada como ferramenta de apoio durante o desenvolvimento do projeto. Ela auxiliou a equipe na organização e estruturação do código, na migração do protótipo HTML e CSS para React, na criação e organização dos componentes funcionais, na utilização de imports, na identificação e correção de erros e na orientação sobre recursos do JavaScript, como localStorage, Math.random() e Math.round(). A IA também foi utilizada como apoio para melhorias na organização visual e na documentação do projeto. Apesar desse auxílio, a equipe foi responsável por analisar, adaptar, testar e implementar as soluções utilizadas na aplicação.
 
 O projeto foi versionado utilizando Git e disponibilizado no GitHub através do repositório https://github.com/BrunoMuzzi15/Sprint2-Front-e-web
-e no Vercel https://sprint2-front-e-web-xdq7-rho.vercel.app
+e no Vercel https://sprint2-front-e-web.vercel.app
 
 Para executar o projeto em outra máquina, basta instalar o Node.js, clonar o repositório do GitHub, entrar na pasta do projeto, executar "npm install" para instalar as dependências e executar "npm run dev" para iniciar a aplicação. Não é necessário instalar manualmente as dependências do React, pois elas são instaladas automaticamente através do npm install. O projeto também não necessita de banco de dados ou configurações adicionais para funcionar localmente.
 
