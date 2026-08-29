@@ -10,10 +10,10 @@ function Simulador() {
             return;
         }
 
-        // Gera um valor aleatório de 0 a 100
+
         const valorAleatorio = Math.random() * 100;
 
-        // Arredonda o valor
+
         const intensidade = Math.round(valorAleatorio);
 
         let mensagem;
@@ -28,7 +28,7 @@ function Simulador() {
 
         setResultado(mensagem);
 
-        // Salva os dados no localStorage
+     
         localStorage.setItem("ambienteJovi", ambiente);
         localStorage.setItem("intensidadeJovi", intensidade);
     }
